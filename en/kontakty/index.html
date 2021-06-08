@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Contacts</title>
+  <link type="image/x-icon" href="../../bitrix/templates/forum/favicon.ico" rel="icon">
+  <link type="image/x-icon" href="../../bitrix/templates/forum/favicon.ico" rel="shortcut icon">
+  <link type="text/css" rel="stylesheet" href="../../bitrix/templates/forum/css/all.css">
+  <link rel="stylesheet" href="../../bitrix/templates/forum/js/fancy/jquery.fancybox.css">
+  <link type="text/css" rel="stylesheet" href="../../bitrix/templates/forum/css/jquery.fancybox.css">
+  <link type="text/css" rel="stylesheet" href="../../bitrix/templates/forum/css/jquery.fancybox-thumbs.css">
+  <link rel="stylesheet" href="../../bitrix/templates/forum/css/jquery.jscrollpane.css">
+  <link rel="stylesheet" href="../../bitrix/templates/forum/css/jquery.bxslider.css">
+  <script type="text/javascript" src="../../bitrix/templates/forum/js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="../../bitrix/templates/forum/js/jquery.slideshow.js"></script>
+  <script type="text/javascript" src="../../bitrix/templates/forum/js/hover.js"></script>
+  <script type="text/javascript" src="../../bitrix/templates/forum/js/input.js"></script>
+  <script type="text/javascript" src="../../bitrix/templates/forum/js/fancy/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="../../bitrix/templates/forum/js/jquery.fancybox-thumbs.js"></script>
+  <script type="text/javascript" src="../../bitrix/templates/forum/js/jquery.validate.js"></script>
+  <script type="text/javascript" src="../../bitrix/templates/forum/js/masked-new.js"></script>
+  <script src="../../bitrix/templates/forum/js/jquery.bxslider.min.js"></script>
+  <script src="../../bitrix/templates/forum/js/jquery.jscrollpane.min.js"></script>
+  <script src="../../bitrix/templates/forum/js/jquery.mousewheel.js"></script>
+  <script type="text/javascript" src="../../bitrix/templates/forum/js/jquery.main.js"></script>
+  <meta name="keywords" content="Keywords">
+  <meta name="description" content="Description">
+  <link href="../../bitrix/cache/css/s2/forum/kernel_main/kernel_main.css@151442556526347.css" type="text/css" rel="stylesheet">
+  <link href="../../bitrix/cache/css/s2/forum/page_c6300770dc4f7e5c18156824298d3f08/page_c6300770dc4f7e5c18156824298d3f08.css@1514367661870.css" type="text/css" rel="stylesheet">
+  <link href="../../bitrix/cache/css/s2/forum/template_302f69345d9d12b1245c25102952b059/template_302f69345d9d12b1245c25102952b059.css@1514367661175.css" type="text/css" data-template-style="true" rel="stylesheet">
+  <script type="text/javascript">
+  if(!window.BX)window.BX={};if(!window.BX.message)window.BX.message=function(mess){if(typeof mess=='object') for(var i in mess) BX.message[i]=mess[i]; return true;};
+  </script>
+  <script type="text/javascript">
+  (window.BX||top.BX).message({'JS_CORE_LOADING':'Loading...','JS_CORE_WINDOW_CLOSE':'Close','JS_CORE_WINDOW_EXPAND':'Expand','JS_CORE_WINDOW_NARROW':'Restore','JS_CORE_WINDOW_SAVE':'Save','JS_CORE_WINDOW_CANCEL':'Cancel','JS_CORE_H':'h','JS_CORE_M':'m','JS_CORE_S':'s','JS_CORE_NO_DATA':'- No data -','JSADM_AI_HIDE_EXTRA':'Hide extra items','JSADM_AI_ALL_NOTIF':'All notifications','JSADM_AUTH_REQ':'Authentication is required!','JS_CORE_WINDOW_AUTH':'Log In','JS_CORE_IMAGE_FULL':'Full size','JS_CORE_WINDOW_CONTINUE':'Continue'});
+  </script>
+  <script type="text/javascript">
+  (window.BX||top.BX).message({'LANGUAGE_ID':'en','FORMAT_DATE':'MM/DD/YYYY','FORMAT_DATETIME':'MM/DD/YYYY H:MI:SS T','COOKIE_PREFIX':'BITRIX_SM','SERVER_TZ_OFFSET':'10800','SITE_ID':'s2','SITE_DIR':'/en/','USER_ID':'','SERVER_TIME':'1583487297','USER_TZ_OFFSET':'0','USER_TZ_AUTO':'Y','bitrix_sessid':'16a561038ae98cd4e916159a80bcd067'});
+  </script>
+  <script type="text/javascript" src="../../bitrix/cache/js/s2/forum/kernel_main/kernel_main.js@1522066085284120.html"></script>
+  <script type="text/javascript">
+  BX.setJSList(['/bitrix/js/main/core/core.js','/bitrix/js/main/utils.js','/bitrix/js/main/cphttprequest.js','/bitrix/js/main/core/core_popup.js','/bitrix/js/main/core/core_date.js','/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/json/json2.min.js','/bitrix/js/main/core/core_ls.js','/bitrix/js/main/session.js','/bitrix/js/main/core/core_window.js','/bitrix/components/bitrix/map.yandex.view/templates/.default/script.js']); 
+  </script>
+  <script type="text/javascript">
+  BX.setCSSList(['/bitrix/js/main/core/css/core.css','/bitrix/js/main/core/css/core_popup.css','/bitrix/js/main/core/css/core_date.css','/bitrix/components/bitrix/map.yandex.system/templates/.default/style.css','/bitrix/templates/forum/styles.css']); 
+  </script>
+  <script type="text/javascript" src="../../bitrix/cache/js/s2/forum/page_7bb9d22bf8d0c872741402bb045bcc31/page_7bb9d22bf8d0c872741402bb045bcc31.js@15143676611897.html"></script>
+</head>
+<body>
+  <div id="panel"></div>
+  <div class="page">
+    <div id="wrapper">
+      <header class="header" id="non-printable">
+        <div class="top-box">
+          <a href="../press-tsentr/news/rastet-chislo-stran-uchastnits-foruma1/"><strong class="logo-en">INTERNATIONAL FORUM OF UNIVERSITY OF SCIENCE</strong></a>
+          <ul class="languages">
+            <li>
+              <a href="../../kontakty/" class="not-active"><img src="../../bitrix/templates/forum/images/ico-ru.png" alt=""></a>
+            </li>
+            <li>
+              <a href="/"><img src="../../bitrix/templates/forum/images/ico-en.png" alt=""></a>
+            </li>
+          </ul>
+        </div>
+        <nav class="nav">
+          <ul>
+            <li class="">FORUM</li>
+            <li class="">
+              <a href="../dose/">PROFILE</a>
+            </li>
+            <li class="">
+              <a href="../press-tsentr/">PRESS CENTRE</a>
+            </li>
+            <li class="active">
+              <a>CONTACTS</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="nav-level2">
+          <ul>
+            <li class="">
+              <a href="../orgkomitet/">ORGANIZING COMMITTEE</a>
+            </li>
+            <li class="">
+              <a href="../programma/">PROGRAM</a>
+            </li>
+            <li class="">
+              <a href="../vystavochnaya-ekspozitsiya/">EXHIBITION</a>
+            </li>
+            <li class="">
+              <a href="../registratsiya/">REGISTRATION</a>
+            </li>
+            <li class="">
+              <a href="../partnery/">PARTNERS</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <section class="main">
+        <ul class="breadcrumbs">
+          <li>
+            <a href="../press-tsentr/news/rastet-chislo-stran-uchastnits-foruma1/" title="Main">Main</a>
+          </li>
+          <li>Contacts</li>
+        </ul>
+        <div id="printSelection">
+          <div class="twocolumns">
+            <div class="map-holder">
+              <script type="text/javascript">
+              function BX_SetPlacemarks_MAP_mF8Ev4(map)
+              {
+              if(typeof window["BX_YMapAddPlacemark"] != 'function')
+              {
+                /* If component's result was cached as html,
+                 * script.js will not been loaded next time.
+                 * let's do it manualy.
+                */
+
+                (function(d, s, id)
+                {
+                        var js, bx_ym = d.getElementsByTagName(s)[0];
+                        if (d.getElementById(id)) return;
+                        js = d.createElement(s); js.id = id;
+                        js.src = "/bitrix/components/bitrix/map.yandex.view/templates/.default/script.js";
+                        bx_ym.parentNode.insertBefore(js, bx_ym);
+                }(document, 'script', 'bx-ya-map-js'));
+
+                var ymWaitIntervalId = setInterval( function(){
+                                if(typeof window["BX_YMapAddPlacemark"] == 'function')
+                                {
+                                        BX_SetPlacemarks_MAP_mF8Ev4(map);
+                                        clearInterval(ymWaitIntervalId);
+                                }
+                        }, 300
+                );
+
+                return;
+              }
+
+              var arObjects = {PLACEMARKS:[],POLYLINES:[]};
+              arObjects.PLACEMARKS[arObjects.PLACEMARKS.length] = BX_YMapAddPlacemark(map, {'LON':'37.623671269811','LAT':'55.784773184142','TEXT':'Форум'});
+              }
+              </script>
+              <div class="bx-yandex-view-layout">
+                <div class="bx-yandex-view-map">
+                  <script>
+                        var script = document.createElement('script');
+                        script.src = 'http://api-maps.yandex.ru/2.0/?load=package.full&mode=release&lang=en-US&wizard=bitrix';
+                        (document.head || document.documentElement).appendChild(script);
+                        script.onload = function () {
+                                this.parentNode.removeChild(script);
+                        };
+                  </script> 
+                  <script type="text/javascript">
+
+
+
+                  if (!window.GLOBAL_arMapObjects)
+                  window.GLOBAL_arMapObjects = {};
+
+                  function init_MAP_mF8Ev4()
+                  {
+                  if (!window.ymaps)
+                  return;
+
+                  if(typeof window.GLOBAL_arMapObjects['MAP_mF8Ev4'] !== "undefined")
+                  return;
+
+                  var node = BX("BX_YMAP_MAP_mF8Ev4");
+                  node.innerHTML = '';
+
+                  var map = window.GLOBAL_arMapObjects['MAP_mF8Ev4'] = new ymaps.Map(node, {
+                  center: [55.785021057625, 37.623542523778],
+                  zoom: 16,
+                  type: 'yandex#map'
+                  });
+
+                  map.behaviors.enable("scrollZoom");
+                  map.behaviors.enable("dblClickZoom");
+                  map.behaviors.enable("drag");
+                  map.behaviors.enable("rightMouseButtonMagnifier");
+                  map.controls.add('smallZoomControl');
+                  if (window.BX_SetPlacemarks_MAP_mF8Ev4)
+                  {
+                  window.BX_SetPlacemarks_MAP_mF8Ev4(map);
+                  }
+                  }
+
+                  (function bx_ymaps_waiter(){
+                  if(typeof ymaps !== 'undefined')
+                  ymaps.ready(init_MAP_mF8Ev4);
+                  else
+                  setTimeout(bx_ymaps_waiter, 100);
+                  })();
+
+
+                  /* if map inits in hidden block (display:none)
+                  *  after the block showed
+                  *  for properly showing map this function must be called
+                  */
+                  function BXMapYandexAfterShow(mapId)
+                  {
+                  if(window.GLOBAL_arMapObjects[mapId] !== undefined)
+                  window.GLOBAL_arMapObjects[mapId].container.fitToViewport();
+                  }
+
+                  </script>
+                  <div id="BX_YMAP_MAP_mF8Ev4" class="bx-yandex-map" style="height: 342px; width: 588px;">
+                    loading map...
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h1>Contacts</h1>
+            <h3>ORGANIZING COMMITTEE</h3>
+            <dl class="contacts-list">
+              <dt class="phone-label">телефон</dt>
+              <dd class="phone">+7 (495) 221-77-51</dd>
+              <dt class="email-label">Электронная почта</dt>
+              <dd>
+                <a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="85e0fdf6f5eae9ecebe0c5e2e8e4ece9abe6eae8">[email&#160;protected]</a>
+              </dd>
+              <dt class="address-label">Адрес</dt>
+              <dd>
+                <address>
+                  Olympiyskiy prospect, 18/1, Moscow, 129110.
+                </address>
+              </dd>
+            </dl><span class="contacts-note">to attend the conference you should</span> <a href="../../registratsiya/" class="btn-register">Sign up</a>
+            <div class="info-cols">
+              <div class="column">
+                <h4>how to get there by car</h4>
+                <h5>Sheremetyevo International Airport - SVO</h5>Hotel direction: 18.8 mile(s) SW. From Sheremetievo International Airport proceed along Mezhdunarodnoe shosse, take the ramp onto Leningradskoe shosse, continue onto Leningradskiy prospect up to the 3rd ring road. Turn to Sushevsky Val and proceed till the exit toward Verzemneka street, continue onto Shepkina street. Turn right onto Samarskaya street. AZIMUT Moscow Olympic Hotel is on the right side. Please call the hotel to arrange for transportation.<br>
+                <br>
+                <br>
+                <br>
+                <p></p>
+                <h5>Moscow Domodedovo Airport - DME</h5>Hotel direction: 31 mile(s) NW. From Domodedovo International Airport proceed along Kashirskoe shosse, continue onto Varshavskoe shosse that becomes the Bolshaya Tulskaya street, turn right to the Danilovsky Val and slight left to the Dubininskaya street. Turn right onto Sadovoe ring, turn right to Shepkina street. Turn left onto Samarskaya street. AZIMUT Moscow Olympic Hotel is on the right side. Please call the hotel to arrange for transportation.<br>
+                <br>
+                <br>
+                <br>
+                <p></p>
+                <h5>Vnukovo Airport - VKO</h5>
+                <p>Hotel direction: 21.1 mile(s) NW From Vnukovo Airport proceed along Kievskoe shosse that becomes the Leninsky prospect, turn left towards Sadovoe Ring and proceed till exit to Tsvetnoy Boulevard street. Turn left onto Olimpiyskiy prospect. Then turn right to the Samarskaya street. AZIMUT Moscow Olympic Hotel is on the left side. Please call the hotel to arrange for transportation.</p>
+              </div>
+              <div class="column">
+                <h4>how to get there on foot</h4>
+                <p>Metro Station - Prospekt Mira (radial) of the subway exit on the left, go to first traffic light and turn left into the alley. Next, go straight, the hotel will be on the right side.</p>
+              </div>
+            </div><br>
+          </div>
+          <div class="four-cols">
+            <div class="holder">
+              <div class="column">
+                <span>SUPPORT SERVICE OF THE REGISTERED VISITORS:</span> <a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="86ebf5f3ebe2a8e0e9f4f3ebb4b6b7b2c6e1ebe7efeaa8e5e9eb">[email&#160;protected]</a>
+              </div>
+              <div class="column">
+                <span>CONCERNING PERFORMANCE WITH REPORTS:</span> <a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="48253b3d252c662e273a3d257a78797c082f25292124662b2725">[email&#160;protected]</a>
+              </div>
+              <div class="column">
+                <span>CONCERNING PARTNERSHIP AND PARTICIPATION IN THE EXHIBITION:</span> <a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="8ae7f9ffe7eea4ece5f8ffe7b8babbbecaede7ebe3e6a4e9e5e7">[email&#160;protected]</a>
+              </div>
+              <div class="column">
+                <span>CONCERNING PERFORMANCE WITH REPORTS:</span> <a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="cca1bfb9a1a8e2aaa3beb9a1fefcfdf88caba1ada5a0e2afa3a1">[email&#160;protected]</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btns-wrap">
+          <a href="/#popup-feedback" class="send-en fancybox">Send email</a> <a href="/#" class="print-en">Print</a>
+        </div>
+      </section>
+    </div>
+  </div>
+  <footer class="footer">
+    <span class="logo-en">UNIVERSITY OF SCIENCE FORUM</span> <span class="copiright">copiright © 2021</span>
+    <div class="column">
+      <h3>Address</h3>
+      <div>
+        127473,&nbsp; Moscow,<br>
+        Delegatskaya Street, building 20,
+      </div>
+    </div>
+    <div class="column phone-column">
+      <h3>Phone</h3><span class="phone">+7 (495) 609-67-00</span> <a href="/" class="note">(Secretariat<br>
+      of Moscow State University<br>
+      of Medicine and Dentistry)</a><br>
+      <br>
+    </div>
+    <ul class="created-list">
+      <li>
+        <a onclick="window.open('http://.ru/', '_blank'); return false;" href="/#">Site supportt</a>
+      </li>
+      <li>
+        <a onclick="window.open('http://cool-reklama.ru/', '_blank'); return false;" href="/#">Website promotion</a>
+      </li>
+    </ul>
+  </footer>
+  <div class="modal" id="popup">
+    <h3>Private office</h3>
+    <div class="text-wrap">
+      <input type="text" class="text" name="login" placeholder="Login">
+    </div>
+    <div class="text-wrap">
+      <input type="password" class="text" name="password" placeholder="Password">
+    </div>
+    <div class="wrap">
+      <a href="../registration/" class="register">registration</a> <input type="submit" id="login-sent" class="submit" value="login">
+    </div>
+    <div id="errors" class="wrap" style="text-align:center;"></div>
+    <div class="forgot">
+      <a href="/#">Recover password</a>
+    </div>
+  </div>
+  <div class="modal" id="popup-feedback">
+    <h3>feedback</h3>
+    <fieldset>
+      <div class="text-wrap">
+        <input type="text" class="text" name="name" placeholder="Full name*">
+      </div>
+      <div class="text-wrap">
+        <input type="text" class="text" name="email" placeholder="Your e-mail">
+      </div>
+      <div class="text-wrap">
+        <input type="text" class="text" name="topic" placeholder="Theme">
+      </div>
+      <div class="text-wrap">
+        <textarea cols="30" rows="10" name="text" placeholder="Text"></textarea>
+      </div>
+      <div class="text-wrap">
+        <div class="g-recaptcha" data-sitekey="6LeXCRcUAAAAAJL2R9XQJVfceqZlrNvv7dN_xTDx"></div>
+        <div class="text-danger" id="recaptchaError"></div>
+      </div>
+      <div class="wrap">
+        <input type="submit" class="submit-send-en" value="Send">
+      </div>
+    </fieldset>
+  </div>
+  <div class="modal" id="popup2">
+    <h3></h3>
+    <h4>Expect an answer by e-mail</h4>
+  </div>
+  <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script> 
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+</body>
+</html>
