@@ -1,0 +1,145 @@
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+ */
+
+.jspContainer
+{
+	overflow: hidden;
+	position: relative;
+	padding-bottom: 35px;
+	outline: 0;
+}
+
+.jspPane
+{
+	position: absolute;
+}
+
+.jspVerticalBar
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 16px;
+	height: 100%;
+	background: red;
+}
+
+.jspHorizontalBar
+{
+	position: absolute;
+	bottom: 4px;
+	left: 0;
+	width: 100%;
+	height: 6px;
+}
+
+.jspVerticalBar *,
+.jspHorizontalBar *
+{
+	margin: 0;
+	padding: 0;
+}
+
+.jspCap
+{
+	width: 2px;
+	height: 5px;
+}
+
+.jspHorizontalBar .jspCap
+{
+	float: left;
+}
+
+.jspTrack
+{
+	background: #e9ecf1;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border-top: 1px solid #a4a9b2;
+	border-bottom: 1px solid #d4d8de;
+	box-shadow: inset 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.jspDrag
+{
+	background: #b287bc; /* Old browsers */
+	background: -moz-linear-gradient(top, #b287bc 0%, #ac88bc 50%, #7c4f9b 51%, #583189 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b287bc), color-stop(50%,#ac88bc), color-stop(51%,#7c4f9b), color-stop(100%,#583189)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #b287bc 0%,#ac88bc 50%,#7c4f9b 51%,#583189 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #b287bc 0%,#ac88bc 50%,#7c4f9b 51%,#583189 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #b287bc 0%,#ac88bc 50%,#7c4f9b 51%,#583189 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #b287bc 0%,#ac88bc 50%,#7c4f9b 51%,#583189 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b287bc', endColorstr='#583189',GradientType=0 ); /* IE6-9 */
+	height: 13px;
+	position: relative;
+	top: -4px;
+	left: 0;
+	cursor: pointer;
+	border-radius: 3px;
+}
+.jspDrag:after {
+	position: absolute;
+	content: url(../images/drag.png);
+	left: 50%;
+	margin-left: -4px;
+	top: -5px;
+}
+
+.jspHorizontalBar .jspTrack
+{
+	float: left;
+	height: 100%;
+}
+.jspHorizontalBar .jspDrag {
+	float: left;
+}
+
+.jspArrow
+{
+	background: #50506d;
+	text-indent: -20000px;
+	display: block;
+	cursor: pointer;
+}
+
+.jspArrow.jspDisabled
+{
+	cursor: default;
+	background: #80808d;
+}
+
+.jspVerticalBar .jspArrow
+{
+	height: 16px;
+}
+
+.jspHorizontalBar .jspArrow
+{
+	width: 16px;
+	float: left;
+	height: 100%;
+}
+
+.jspVerticalBar .jspArrow:focus
+{
+	outline: none;
+}
+
+.jspCorner
+{
+	background: #eeeef4;
+	float: left;
+	height: 100%;
+}
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner
+{
+	margin: 0 -3px 0 0;
+}
