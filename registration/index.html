@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Регистрация нового пользователя</title>
+  <link type="image/x-icon" href="../bitrix/templates/forum/favicon.ico" rel="icon">
+  <link type="image/x-icon" href="../bitrix/templates/forum/favicon.ico" rel="shortcut icon">
+  <link type="text/css" rel="stylesheet" href="../bitrix/templates/forum/css/all.css">
+  <link rel="stylesheet" href="../bitrix/templates/forum/js/fancy/jquery.fancybox.css">
+  <link type="text/css" rel="stylesheet" href="../bitrix/templates/forum/css/jquery.fancybox.css">
+  <link type="text/css" rel="stylesheet" href="../bitrix/templates/forum/css/jquery.fancybox-thumbs.css">
+  <link rel="stylesheet" href="../bitrix/templates/forum/css/jquery.jscrollpane.css">
+  <link rel="stylesheet" href="../bitrix/templates/forum/css/jquery.bxslider.css">
+  <script type="text/javascript" src="../bitrix/templates/forum/js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="../bitrix/templates/forum/js/jquery.slideshow.js"></script>
+  <script type="text/javascript" src="../bitrix/templates/forum/js/hover.js"></script>
+  <script type="text/javascript" src="../bitrix/templates/forum/js/input.js"></script>
+  <script type="text/javascript" src="../bitrix/templates/forum/js/fancy/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="../bitrix/templates/forum/js/jquery.fancybox-thumbs.js"></script>
+  <script type="text/javascript" src="../bitrix/templates/forum/js/jquery.validate.js"></script>
+  <script type="text/javascript" src="../bitrix/templates/forum/js/masked-new.js"></script>
+  <script src="../bitrix/templates/forum/js/jquery.bxslider.min.js"></script>
+  <script src="../bitrix/templates/forum/js/jquery.jscrollpane.min.js"></script>
+  <script src="../bitrix/templates/forum/js/jquery.mousewheel.js"></script>
+  <script type="text/javascript" src="../bitrix/templates/forum/js/jquery.main.js"></script>
+  <meta name="keywords" content="Keywords">
+  <meta name="description" content="Description">
+  <link href="../bitrix/cache/css/s1/forum/template_302f69345d9d12b1245c25102952b059/template_302f69345d9d12b1245c25102952b059.css@1514359579175.css.html" type="text/css" data-template-style="true" rel="stylesheet">
+</head>
+<body>
+  <div id="panel"></div>
+  <div class="page">
+    <div id="wrapper">
+      <header class="header" id="non-printable">
+        <div class="top-box">
+          <a href="../press-tsentr/news/more-and-more-countries-are-to-participate-in-the-forum/"><strong class="logo">МЕЖДУНАРОДНЫЙ ФОРУМ УНИВЕРСИТЕТСКОЙ НАУКИ</strong></a>
+          <ul class="languages">
+            <li>
+              <a href="/"><img src="../bitrix/templates/forum/images/ico-ru.png" alt=""></a>
+            </li>
+            <li>
+              <a href="../en/registration/" class="not-active"><img src="../bitrix/templates/forum/images/ico-en.png" alt=""></a>
+            </li>
+          </ul>
+        </div>
+        <nav class="nav">
+          <ul>
+            <li class="">
+              <a href="../dose/">ДОСЬЕ</a>
+            </li>
+            <li class="">
+              <a href="../press-tsentr/">ПРЕСС-ЦЕНТР</a>
+            </li>
+            <li class="">
+              <a href="../kontakty/">КОНТАКТЫ</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="nav-level2">
+          <ul>
+            <li class="">
+              <a href="../orgkomitet/">ОРГКОМИТЕТ</a>
+            </li>
+            <li class="">
+              <a href="../programma/">ПРОГРАММА</a>
+            </li>
+            <li class="">
+              <a href="../vystavochnaya-ekspozitsiya/">ВЫСТАВОЧНАЯ ЭКСПОЗИЦИЯ</a>
+            </li>
+            <li class="">
+              <a href="../registratsiya/">РЕГИСТРАЦИЯ</a>
+            </li>
+            <li class="">
+              <a href="../partnery/">ПАРТНЕРЫ</a>
+            </li>
+            <li class="">
+              <a href="../usloviya-uchastiya/">УСЛОВИЯ УЧАСТИЯ</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <section class="main">
+        <ul class="breadcrumbs">
+          <li>
+            <a href="../press-tsentr/news/more-and-more-countries-are-to-participate-in-the-forum/" title="Главная">Главная</a>
+          </li>
+          <li>Регистрация</li>
+        </ul>
+        <div class="twocolumns">
+          <h1>Регистрация</h1>
+          <h2>после регистрации вам будут доступны все функции личного кабинета</h2><br>
+          <form method="post" action="/" class="main-form" name="regform" enctype="multipart/form-data" id="regform">
+            <div class="row">
+              <label>ФИО*</label> <input class="text" size="30" type="text" name="REGISTER[NAME]" required="" value="" placeholder="Иванов Петр Сергеевич">
+            </div>
+            <div class="row">
+              <label>E-mail*</label> <input class="text" id="email" size="30" type="text" name="REGISTER[EMAIL]" required="" value="" placeholder="mail@mail.ru">
+            </div>
+            <div class="row">
+              <label>Логин*</label> <input class="text" size="30" type="text" name="REGISTER[LOGIN]" required="" value="" placeholder="login">
+            </div>
+            <div class="row">
+              <label>Пароль*</label> <input size="30" class="text" type="password" name="REGISTER[PASSWORD]" required="" value="" autocomplete="off" placeholder="********">
+            </div>
+            <div class="row">
+              <label>Подтверждение пароля*</label> <input class="text" size="30" type="password" name="REGISTER[CONFIRM_PASSWORD]" required="" value="" autocomplete="off" placeholder="*********">
+            </div>
+            <div class="row">
+              <label>Регион</label> <input class="text" size="30" type="text" name="REGISTER[PERSONAL_CITY]" value="" placeholder="Москва">
+            </div>
+            <div class="row">
+              <label>Профессия</label> <input class="text" size="30" type="text" name="REGISTER[PERSONAL_PROFESSION]" value="" placeholder="Хирург">
+            </div>
+            <div class="row">
+              <label>Наличие ученой степени и звания</label> <input class="text" size="30" type="text" name="REGISTER[UF_ACADEMIC_DEGREE]" value="" placeholder="Доктор наук">
+            </div>
+            <div class="row">
+              <label>Сфера научных интересов</label> <input class="text" size="30" type="text" name="REGISTER[UF_RESEARCH_INTERESTS]" value="" placeholder="Хирургия">
+            </div>
+            <div class="row">
+              <label>Контактный телефон</label> <input class="text" size="30" type="text" name="REGISTER[PERSONAL_PHONE]" value="" placeholder="+7 (925) 458-74-12">
+            </div><span class="form-note">* поля, обязательные для заполнения</span> <span id="note" class="form-note pass_err" style="margin:-20px 0 10px 0"></span> <input type="button" id="send" class="submit" value="Отправить заявку"><input type="submit" class="submit" style="display:none" name="register_submit_button" value="Отправить заявку">
+          </form>
+        </div>
+      </section>
+    </div>
+  </div>
+  <footer class="footer">
+    <span class="logo">ФОРУМ УНИВЕРСИТЕТСКОЙ НАУКИ</span> <span class="copiright">copiright © 2021</span>
+    <div class="column">
+      <h3>Адрес</h3>
+      <div>
+        127473,&nbsp;г. Москва,<br>
+        ул. Делегатская, д.20, стр.1
+      </div>
+    </div>
+    <div class="column phone-column">
+      <h3>Телефон</h3><span class="phone">+7 (495) 609-67-00</span> <a href="../kontakty/" class="note">(Секретариат МГМСУ)</a><br>
+      <br>
+    </div>
+    <ul class="created-list">
+      <li>
+        <a onclick="window.open('http://.ru/', '_blank'); return false;" href="/#">Разработка сайта</a>
+      </li>
+      <li>
+        <a onclick="window.open('http://cool-reklama.ru/', '_blank'); return false;" href="/#">Поддержка сайта</a>
+      </li>
+    </ul>
+  </footer>
+  <div class="modal" id="popup">
+    <h3>Личный кабинет</h3>
+    <div class="text-wrap">
+      <input type="text" class="text" name="login" placeholder="Логин">
+    </div>
+    <div class="text-wrap">
+      <input type="password" class="text" name="password" placeholder="Пароль">
+    </div>
+    <div class="wrap">
+      <a href="/" class="register">регистрация</a> <input type="submit" id="login-sent" class="submit" value="войти">
+    </div>
+    <div id="errors" class="wrap" style="text-align:center;"></div>
+    <div class="forgot">
+      <a href="/#">Восстановить пароль</a>
+    </div>
+  </div>
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+</body>
+</html>
